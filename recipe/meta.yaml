@@ -43,6 +43,7 @@ about:
     smallest substring is used. This lexicographically smallest substring of size k
     is called the "UniqTag" of that string.
   license_family: MIT
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
