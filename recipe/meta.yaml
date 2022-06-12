@@ -1,4 +1,4 @@
-{% set version = '1.0' %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/uniqtag_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/uniqtag/uniqtag_{{ version }}.tar.gz
-  sha256: a88c021901511383c20d4045f69dd5d58480f85a672817b80c76ecf66b38b808
+  sha256: 25ba0731ff61857ea4c1d06c99018ed3b0d1121689b6269b79776371092fad6e
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,11 +36,8 @@ test:
 about:
   home: https://github.com/sjackman/uniqtag
   license: MIT
-  summary: For each string in a set of strings, determine a unique tag that is a substring of
-    fixed size k unique to that string, if it has one. If no such unique substring exists,
-    the least frequent substring is used. If multiple unique substrings exist, the lexicographically
-    smallest substring is used. This lexicographically smallest substring of size k
-    is called the "UniqTag" of that string.
+  summary: For each string in a set of strings, determine a unique tag that is a substring of fixed size k unique to that string, if it has one. If no such unique substring exists, the least frequent substring is used. If multiple unique substrings exist, the lexicographically smallest substring is used. This lexicographically
+    smallest substring of size k is called the "UniqTag" of that string.
   license_family: MIT
   license_file: LICENSE
 
