@@ -1,11 +1,11 @@
-About r-uniqtag
-===============
+About r-uniqtag-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-uniqtag-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sjackman/uniqtag
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-uniqtag-feedstock/blob/main/LICENSE.txt)
 
 Summary: For each string in a set of strings, determine a unique tag that is a substring of fixed size k unique to that string, if it has one. If no such unique substring exists, the least frequent substring is used. If multiple unique substrings exist, the lexicographically smallest substring is used. This lexicographically smallest substring of size k is called the "UniqTag" of that string.
 
